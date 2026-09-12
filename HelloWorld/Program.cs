@@ -134,15 +134,50 @@
 // Console.ReadLine();
 
 // Задание 1
-string a = "Матрица";
-int b = 7;
-double c = 3.14159;
-char d = 'A';
+// string a = "Матрица";
+// int b = 7;
+// double c = 3.14159;
+// char d = 'A';
 
-Console.WriteLine(a);
-Console.WriteLine(b);
-Console.WriteLine(c);
-Console.WriteLine(d);
+// Console.WriteLine(a);
+// Console.WriteLine(b);
+// Console.WriteLine(c);
+// Console.WriteLine(d);
 
+// Задание 2
+Console.WriteLine("I");
+Console.WriteLine("need");
+Console.WriteLine("more");
+Console.WriteLine("power!");
+
+//Задание 3
+Console.WriteLine("\"Hello There\"");
+
+//Задание 4
+Console.Write("Введите стоимость монитора:");
+int monitor = int.Parse(Console.ReadLine());
+Console.Write("Введите стоимость системного блока:");
+int systblok = int.Parse(Console.ReadLine());
+Console.Write("Введите стоимость клавиатуры:");
+int keyboard = int.Parse(Console.ReadLine());
+Console.Write("Введите стоимость мыши:");
+int mouse = int.Parse(Console.ReadLine());
+int oneComputerCost = monitor + systblok + keyboard + mouse;
+int totalCost = oneComputerCost * 3;
+Console.WriteLine($"Стоимость покупки: {totalCost}");
+
+//Задание 5
+Console.Write("Введите число a:");
+int a = int.Parse(Console.ReadLine());
+Console.Write("Введите число b: ");
+int b = int.Parse(Console.ReadLine());
+double result = 3 * Math.Pow(a + b, 3) + 275 * Math.Pow(b, 2) - 127 * a - 41;
+Console.WriteLine($"Значение функции: {result}");
+
+//Задание 6
+Console.Write("Введите температуру в градусах Цельсия:");
+double celsius = double.Parse(Console.ReadLine());
+double fahrenheit = celsius * 9 / 5 + 32;
+Console.WriteLine($"Температура:{fahrenheit}°F");
 
 
